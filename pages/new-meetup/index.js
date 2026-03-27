@@ -19,7 +19,7 @@ function NewMeetUpPage() {
     const data = await response.json();
     console.log(data);
 
-    router.replace("/");
+    window.location.href = "/";
   }
   return (
     <Fragment>
