@@ -30,7 +30,7 @@ function HomePage(props) {
 //   };
 // }
 
-export async function getStaticProps() {
+export async function getServerSideProp() {
   //fetch data from an API
 
   const client = await MongoClient.connect(
