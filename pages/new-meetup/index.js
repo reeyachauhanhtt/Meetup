@@ -19,7 +19,7 @@ function NewMeetUpPage() {
     const data = await response.json();
     console.log(data);
 
-    router.push("/");
+    router.replace("/");
   }
   return (
     <Fragment>
@@ -30,7 +30,7 @@ function NewMeetUpPage() {
           content="Add a new meetup and expand your newtworking!"
         />
       </Head>
-      <NewMeetUpForm onAddMeetup={addMeetUpHandler} />;
+      <NewMeetUpForm onAddMeetup={addMeetUpHandler} />
     </Fragment>
   );
 }
